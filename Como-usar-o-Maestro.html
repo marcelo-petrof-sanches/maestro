@@ -194,11 +194,14 @@
     </section>
 
     <section id="download">
-      <div class="sec-head"><div class="sec-num">02</div><h3>Baixar e posicionar o template</h3></div>
-      <p>Pegue a pasta <span class="cmd">maestro/</span> do template (link no anúncio) e coloque em algum lugar <strong>local</strong> na sua máquina — por exemplo <span class="cmd">~/maestro/</span>.</p>
+      <div class="sec-head"><div class="sec-num">02</div><h3>Baixar o Maestro</h3></div>
+      <p>Baixe o ZIP mais recente direto do GitHub — este link sempre traz a versão atual:</p>
+      <div class="code"><span class="g">https://github.com/tchello12/maestro/releases/latest/download/maestro.zip</span></div>
+      <p>Clique com o botão direito no arquivo baixado → <strong>Extrair Tudo</strong>. Você terá <strong>uma</strong> pasta <span class="cmd">maestro</span> com o <span class="cmd">CLAUDE.md</span> dentro — coloque em algum lugar <strong>local</strong> (ex.: <span class="cmd">~/maestro/</span>).</p>
       <ul class="clean">
+        <li><strong>Alternativa (git):</strong> <span class="cmd">git clone https://github.com/tchello12/maestro.git</span> — já cria a pasta pronta e deixa você puxar updates depois com <span class="cmd">git pull</span>.</li>
         <li><strong>Mantenha fora de drives compartilhados.</strong> O brain vai guardar material confidencial de cliente.</li>
-        <li>O template é uma cópia <strong>limpa e vazia</strong>: o sistema + templates em branco, sem nenhum dado pessoal de ninguém.</li>
+        <li>É uma cópia <strong>limpa</strong>: o sistema + templates em branco, sem nenhum dado de ninguém.</li>
       </ul>
       <div class="code"><span class="c"># o que vem na caixa</span>
 maestro/
@@ -217,7 +220,7 @@ maestro/
     <section id="open">
       <div class="sec-head"><div class="sec-num">03</div><h3>Abrir no Claude Code</h3></div>
       <p>Abra a pasta <span class="cmd">maestro/</span> no Claude Code (app, terminal ou IDE). Na abertura, o <span class="cmd">CLAUDE.md</span> carrega automaticamente e o Claude <strong>vira o Maestro</strong> — você já está conversando com o orquestrador.</p>
-      <div class="note warn"><div class="ico">⚠️</div><p><strong>Abra a pasta que contém o <span class="cmd">CLAUDE.md</span> diretamente.</strong> O zip cria uma pasta <span class="cmd">maestro</span> dentro de onde você extrai — se você criou uma pasta própria e extraiu lá, o conteúdo fica aninhado (ex.: <span class="cmd">…/minha-pasta/maestro/</span>). Abra <strong>essa</strong>. Regra: ao abrir, você tem que <strong>ver</strong> o <span class="cmd">CLAUDE.md</span> e a pasta <span class="cmd">.claude/</span> na raiz.</p></div>
+      <div class="note warn"><div class="ico">⚠️</div><p><strong>Abra a pasta que contém o <span class="cmd">CLAUDE.md</span>.</strong> Com o ZIP do link acima, ao extrair você tem <strong>uma</strong> pasta <span class="cmd">maestro</span> com o <span class="cmd">CLAUDE.md</span> dentro — abra exatamente essa (File ▸ Open Folder). <em>Se</em> você baixar pelo botão "Code ▸ Download ZIP" do GitHub, pode vir pasta dentro de pasta (<span class="cmd">maestro-main/maestro-main/</span>) — aí entre até achar o <span class="cmd">CLAUDE.md</span>. Regra: ao abrir, você tem que <strong>ver</strong> o <span class="cmd">CLAUDE.md</span> e a pasta <span class="cmd">.claude/</span> na raiz.</p></div>
       <div class="note"><div class="ico">✅</div><p><strong>Como saber que abriu o nível certo:</strong> a primeira resposta vem <strong>como o Maestro</strong> (e não "sou o Claude Code, ajudo com desenvolvimento de software"), e ao digitar <span class="cmd">/</span> o autocomplete mostra <span class="cmd">/setup</span>, <span class="cmd">/morning</span> etc. Se ele se apresentar como assistente de dev ou só aparecerem comandos genéricos, você abriu o nível errado — desça uma pasta.</p></div>
 
       <h4>O atalho: setup guiado built-in</h4>

@@ -10,8 +10,10 @@ persistent **brain** of files, coordinating a team of specialist sub-agents.
 
 1. **Get Claude Code** — request it on BCG IT Connect: *"Claude Enterprise (Chat + Code)"*.
    The regular claude.ai chat / Claude app will NOT run Maestro.
-2. **Download this folder** — click the green **`Code`** button above → **Download ZIP**
-   (or `git clone`). Unzip it. You'll get a `maestro/` folder containing `CLAUDE.md`.
+2. **Download Maestro** — grab the latest ZIP:
+   **https://github.com/tchello12/maestro/releases/latest/download/maestro.zip** — then
+   right-click → **Extract All**. You get one `maestro` folder with `CLAUDE.md` inside.
+   (Or `git clone https://github.com/tchello12/maestro.git`.)
 3. **Open it in Claude Code and type `/setup`** — open the folder that *directly contains*
    `CLAUDE.md` (File ▸ Open Folder), then type `/setup` and press Enter. It walks you
    through everything. 👉 Visual guide: **`Como-usar-o-Maestro.html`** in this folder.
