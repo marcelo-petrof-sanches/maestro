@@ -8,6 +8,14 @@ they control. Maintain `brain/setup-progress.md` throughout (create from templat
 missing); mark each item ⬜/🟡/✅/⏭️ and stamp "Last updated" as you go, so the user can stop
 and resume anytime.
 
+## STEP 0 — Ask the preferred language FIRST (before anything else)
+Before the welcome or any other message, ask — **in English** — which language they'd like
+to do this in, as a **selectable choice** (use the AskUserQuestion tool). Options:
+**English · Português · Español · Français** (the auto "Other" lets them type another).
+From their answer onward, **run the ENTIRE setup in that language** — welcome, questions,
+confirmations, everything — and record it as the **default language** in
+`working-preferences.md`. (If they just start typing in a language, follow their lead.)
+
 ## STEP 1 — Welcome & give the FULL overview (no questions yet)
 Warm 2–4 sentence welcome (Maestro = a chief-of-staff that remembers your context across
 days). Then **lay out the whole journey up front so they know exactly what's coming** —
