@@ -1,0 +1,50 @@
+# ──────────────────────────────────────────────────────────────
+# Maestro .gitignore
+# This repo ships the CLEAN, BLANK template. Everything tracked here
+# is system + empty templates. The rules below keep your real data
+# OUT of git once you start filling the brain locally.
+# ──────────────────────────────────────────────────────────────
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+
+# Temp / scratch / build artifacts
+.tmp/
+*.tmp
+*.tmp.*
+*.zip
+
+# Claude Code local (machine-specific) settings
+.claude/settings.local.json
+
+# ── Personal brain data — keep templates, ignore real content ──
+# Daily logs (dated files)
+brain/daily/20*.md
+
+# Client & project files (keep the _template.md)
+brain/clients/*.md
+!brain/clients/_template.md
+brain/projects/*.md
+!brain/projects/_template.md
+
+# Development history (keep the _template.md in each)
+brain/development/cdc/*.md
+!brain/development/cdc/_template.md
+brain/development/project-feedback/*.md
+!brain/development/project-feedback/_template.md
+brain/development/retros/*.md
+!brain/development/retros/_template.md
+
+# Reference notes (personal)
+brain/reference/*.md
+
+# Credentials — NEVER commit secrets (keep only index + template)
+brain/credentials/*.md
+!brain/credentials/_index.md
+!brain/credentials/_template.md
+
+# Reusable tools may carry client data — ignore by default; force-add deliberately
+tools/
