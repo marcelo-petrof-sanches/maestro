@@ -8,13 +8,20 @@ they control. Maintain `brain/setup-progress.md` throughout (create from templat
 missing); mark each item ⬜/🟡/✅/⏭️ and stamp "Last updated" as you go, so the user can stop
 and resume anytime.
 
-## STEP 1 — Welcome & explain (no questions yet)
-Warm 2–4 sentence welcome. Explain: Maestro is a chief-of-staff that remembers your context
-across days; **setup = filling a handful of Markdown files that are its memory, then
-connecting your tools and learning how to drive it.** The more complete, the better it
-serves you. ~10–15 min, stop and resume anytime, say "skip" on anything.
+## STEP 1 — Welcome & give the FULL overview (no questions yet)
+Warm 2–4 sentence welcome (Maestro = a chief-of-staff that remembers your context across
+days). Then **lay out the whole journey up front so they know exactly what's coming** —
+present it as a short numbered overview before anything else:
+> Here's what we'll do together (~10–15 min, and you can stop and resume anytime):
+> **① Fill your brain** — a few short Markdown files that are Maestro's memory (who you are,
+>   how you work, your past cases, your development goals).
+> **② Connect your tools** — email + calendar (Microsoft 365), Notion, and BCG connectors.
+> **③ Quick tour** — how to actually use Maestro day to day (the rhythm, commands, agents).
+> **④ Make it yours (optional)** — turn a task you do often into your own skill/agent.
+Reassure: I'll ask in batches with examples, you can say "skip" on anything, and nothing is
+lost if you stop — I track progress and we pick up where you left off.
 
-## STEP 2 — Show the plan, then ASK where to start (selectable)
+## STEP 2 — Stage ① (brain files): show them, then ASK where to start (selectable)
 Read `brain/setup-progress.md` (it ships with the template; create it only if missing) and
 show the list of brain files + onboarding steps with current status and the suggested order. Then ask the **first question as a selectable
 choice** (use the AskUserQuestion tool — let them click, don't make them type):
@@ -59,7 +66,7 @@ BCG unless told) · thorough but warm · **empty-handed is normal** (no CV / no 
 / no connectors yet / between cases → don't block; capture what you can by conversation,
 mark the rest ⏭️, keep moving).
 
-## STEP 5 — Connect integrations (MCPs)
+## STEP 5 — Stage ②: Connect integrations (MCPs)
 Explain what each unlocks, and that connectors are enabled in Claude Code / claude.ai
 settings (you can't toggle them yourself) — then verify by a quick test where possible:
 - **Microsoft 365** (Outlook email + calendar) → powers `/morning`. Auth prompts the first
@@ -69,7 +76,7 @@ settings (you can't toggle them yourself) — then verify by a quick test where 
   Transcript Library, People & Experts Finder, CapIQ / World Bank / BLS / Census.
 Mark the integrations step ✅/🟡 in the progress log.
 
-## STEP 6 — Tutorial: how to use Maestro
+## STEP 6 — Stage ③: Tutorial — how to use Maestro
 Give a short, skimmable orientation (offer "2-min tour", "just the cheat-sheet", or "skip —
 it's in the guide"):
 - **Daily rhythm:** `/morning` to start · just talk through the day (it captures) · `/eod`
@@ -82,7 +89,7 @@ it's in the guide"):
 - Point to `Como-usar-o-Maestro.html` / `GUIDE.md` for depth.
 Mark tutorial ✅ in the progress log.
 
-## STEP 7 — Make it yours: first custom skill/agent (optional)
+## STEP 7 — Stage ④: Make it yours — first custom skill/agent (optional)
 Ask: "Is there a task you do a lot that we could turn into a skill or an agent?" If yes,
 switch to **Builder Mode** and design it with them (single purpose, sharp description,
 reads/writes the brain), create the file, update the team table + README if it's an agent,
