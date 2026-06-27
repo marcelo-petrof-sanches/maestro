@@ -38,7 +38,7 @@ maestro/                      ← open Claude Code HERE (this folder = Maestro's
 ├── GUIDE.md                  ← this guide
 ├── README.md                 ← quick start
 ├── .claude/
-│   ├── agents/               ← the 8 specialists (see §5)
+│   ├── agents/               ← the 10 specialists (see §5)
 │   └── commands/             ← the slash commands (see §4)
 └── brain/                    ← THE SECOND BRAIN (see §6)
     ├── profile/              ← who you are (bio, case history, working preferences)

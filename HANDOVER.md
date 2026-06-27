@@ -24,9 +24,9 @@ maestro/
 ├── README.md            ← quick start
 ├── HANDOVER.md          ← this file
 ├── .claude/
-│   ├── agents/          ← the 8 specialist sub-agents (ready to use)
-│   └── commands/        ← slash commands: /morning /eod /capture /task /schedule
-│                          /client /newcase /retro /feedback
+│   ├── agents/          ← the 10 specialist sub-agents (ready to use)
+│   └── commands/        ← slash commands: /setup /morning /eod /capture /task /schedule
+│                          /client /newcase /retro /feedback /meeting-to-work-items
 └── brain/               ← THE SECOND BRAIN (empty — you fill it)
     ├── profile/         ← working-preferences.md · bio.md · case-history.md  ← FILL FIRST
     ├── clients/         ← one file per client (+ _archive/) — has _template.md

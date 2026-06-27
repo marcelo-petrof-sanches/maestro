@@ -15,8 +15,8 @@ connecting your tools and learning how to drive it.** The more complete, the bet
 serves you. ~10–15 min, stop and resume anytime, say "skip" on anything.
 
 ## STEP 2 — Show the plan, then ASK where to start (selectable)
-Read `brain/setup-progress.md` and show the list of brain files + onboarding steps with
-current status and the suggested order. Then ask the **first question as a selectable
+Read `brain/setup-progress.md` (it ships with the template; create it only if missing) and
+show the list of brain files + onboarding steps with current status and the suggested order. Then ask the **first question as a selectable
 choice** (use the AskUserQuestion tool — let them click, don't make them type):
 - **"Point me to my files first (fastest)"** — the source-ingestion accelerator (STEP 3).
 - **"Start at the top"** — go file-by-file in order (STEP 4).
@@ -41,8 +41,12 @@ For the chosen file, then the next in order:
    field per turn. Invite a brain-dump.
 3. **Map to fields; follow up on blanks** with one targeted question until every field is
    filled or the user says "skip".
-4. **Write the file**, show it back for correction (never a raw dump, never a draft as final).
-5. **Update `brain/setup-progress.md`** and move on.
+4. **Write to the file incrementally** — persist after each grouped batch (don't hold a
+   whole file's answers in chat memory), then show it back for correction (never a raw
+   dump, never a draft as final).
+5. **Update `brain/setup-progress.md` after each batch** (⬜→🟡→✅ + stamp "Last updated"),
+   so an interruption loses at most one batch. On a re-run, **fill only blank fields —
+   never re-ask answered ones.** Then move on.
 Per-file cues: **working-preferences** (identity in ONE batch → also seed `bio.md` identity +
 replace `CLAUDE.md` placeholders; then peak hours/protected time, output style, tool stack →
 Output-standards table, delivery ritual, when to push back, language, tone, never-explain,
@@ -51,7 +55,9 @@ hard "never do X", stakeholder comms, recurring reminders, standing commitments)
 patterns) · **objectives** (offer `/feedback`, or 2–4 goals with practice cues) ·
 **notion-sync** (only if they use Notion).
 Pacing: batch don't dribble · infer before asking (you have the work email + date; firm =
-BCG unless told) · thorough but warm.
+BCG unless told) · thorough but warm · **empty-handed is normal** (no CV / no past feedback
+/ no connectors yet / between cases → don't block; capture what you can by conversation,
+mark the rest ⏭️, keep moving).
 
 ## STEP 5 — Connect integrations (MCPs)
 Explain what each unlocks, and that connectors are enabled in Claude Code / claude.ai
@@ -85,8 +91,10 @@ Maestro begins. Mark the step ✅ (or ⏭️ if they pass).
 
 ## STEP 8 — Finish (or if they stop)
 The progress log already records where they are. Recap it (✅/🟡/⏭️), name what's left, and
-give the next move: **open a fresh chat and run `/morning` — you're live.** Tell them they
-can re-run `/setup` anytime to finish pending items, and that Maestro will remind them at
-session start until everything's done.
+give the next move: **open a fresh chat and run `/morning`.** Be honest about what to
+expect: the brief is fullest once **Microsoft 365 is connected** and **at least one
+development objective** is seeded — until then `/morning` still works but runs lighter
+(lighter calendar/email, a more generic nudge). Tell them they can re-run `/setup` anytime
+to finish pending items, and that Maestro will remind them at session start until done.
 
 User's optional context: $ARGUMENTS

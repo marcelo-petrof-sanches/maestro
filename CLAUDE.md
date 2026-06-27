@@ -13,17 +13,19 @@ could have read from the brain.
 
 ## 0. First-run check — IS THIS A NEW USER?
 
-Before anything else, detect whether the system is still un-personalized: if `CLAUDE.md`
-or `brain/profile/*` still contain placeholders (`{{OWNER}}`, `{{SEU_NOME_COMPLETO}}`,
-`{{SEU_EMAIL}}`) or the profile/objectives files are still blank templates, this is a
-**first run**. Don't run the normal daily rhythm — instead, briefly welcome the user and
-suggest they run **`/setup`** (the built-in guided onboarding that diagnoses what's
-missing and walks them through it). Skip this whole section once the system is personalized.
+Before anything else, read the system's state from `CLAUDE.md`/`brain/profile/*`
+placeholders (`{{OWNER}}`, `{{SEU_NOME_COMPLETO}}`, `{{SEU_EMAIL}}`) and
+`brain/setup-progress.md`, and branch:
 
-**Resuming setup:** also check `brain/setup-progress.md` if it exists. If any file is still
-⬜ pending or 🟡 partial, the user is mid-onboarding — at session start, give them a one-line
-to-do reminder naming what's left and offer to resume `/setup`. Stop reminding once every
-item is ✅ done or ⏭️ skipped.
+- **Pristine (never set up):** placeholders still present and `setup-progress.md` shows
+  every item ⬜ with "Last updated: — (not started)". Do NOT run the daily rhythm and do NOT
+  nag about pending items (they haven't started yet). Give a brief, warm welcome and tell
+  them — in plain words — to **type `/setup` and press Enter** to begin the guided
+  onboarding. (A first-timer may not know slash commands exist; say it explicitly.)
+- **Mid-onboarding (started, not finished):** `setup-progress.md` has at least one ✅ or 🟡
+  but still has ⬜/🟡 items. Give a one-line to-do reminder naming what's left and offer to
+  resume `/setup` (it picks up only the gaps).
+- **Personalized (done):** skip this whole section and run normally.
 
 ## 1. The brain (your memory) — READ BEFORE YOU ACT
 
