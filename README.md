@@ -6,6 +6,20 @@ persistent **brain** of files, coordinating a team of specialist sub-agents.
 > 📖 **Full handbook:** see [GUIDE.md](GUIDE.md) — architecture, all commands and
 > agents, the development loop, best practices, and how a new user can set it up.
 
+## ⬇️ Get started (3 steps)
+
+1. **Get Claude Code** — request it on BCG IT Connect: *"Claude Enterprise (Chat + Code)"*.
+   The regular claude.ai chat / Claude app will NOT run Maestro.
+2. **Download this folder** — click the green **`Code`** button above → **Download ZIP**
+   (or `git clone`). Unzip it. You'll get a `maestro/` folder containing `CLAUDE.md`.
+3. **Open it in Claude Code and type `/setup`** — open the folder that *directly contains*
+   `CLAUDE.md` (File ▸ Open Folder), then type `/setup` and press Enter. It walks you
+   through everything. 👉 Visual guide: **`Como-usar-o-Maestro.html`** in this folder.
+
+> ✅ You opened the right folder if Maestro greets you (not a generic "I'm Claude Code for
+> software development") and `/setup`, `/morning` appear when you type `/`. If not, open one
+> folder deeper (the one with `CLAUDE.md` inside).
+
 ## How to use it
 
 1. Open Claude Code in this folder (`maestro/`). Maestro's instructions load
