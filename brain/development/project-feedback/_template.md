@@ -30,5 +30,5 @@
 - [ ] 
 
 ---
-*After filing: update `../objectives.md` — fold development areas into live objectives,
-add strengths. This file is a key input to the next CDC (`../cdc/`).*
+*After filing: update [`../objectives.md`](../objectives.md) — fold development areas into live
+objectives, add strengths. This file is a key input to the next CDC ([`../cdc/`](../cdc/)).*

@@ -1,6 +1,6 @@
 # Weekly Retro — week ending YYYY-MM-DD
 
-> Run every Friday via `/retro`. Sources: this week's daily logs + `../objectives.md`.
+> Run every Friday via `/retro`. Sources: this week's daily logs + [`../objectives.md`](../objectives.md).
 > The point: connect the week's actual behavior to the development objectives, so CDC
 > prep is a compilation exercise, not an archaeology dig.
 
