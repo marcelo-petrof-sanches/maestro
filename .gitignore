@@ -38,8 +38,9 @@ brain/development/project-feedback/*.md
 brain/development/retros/*.md
 !brain/development/retros/_template.md
 
-# Reference notes (personal)
+# Reference notes (personal) — keep brain-conventions.md (system infrastructure)
 brain/reference/*.md
+!brain/reference/brain-conventions.md
 
 # Credentials — NEVER commit secrets (keep only index + template)
 brain/credentials/*.md

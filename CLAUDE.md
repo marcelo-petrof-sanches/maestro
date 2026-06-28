@@ -50,19 +50,17 @@ If he names a client or project, read that file in `brain/clients/` or
 
 **Keep the brain current.** Whenever {{OWNER}} tells you something durable — a client
 fact, a decision, a new task, a deadline, a preference, what he did today — persist it
-to the right file immediately (or delegate to `work-logger` / `client-keeper`). The
-brain is only as good as how faithfully you update it.
+**where you'll look for it next** (retrieval-first), immediately (or delegate to
+`work-logger` / `client-keeper`). Two single-source homes that stop drift:
+- Durable **decisions** (methodology/scope/stakeholder/commercial) → `brain/decisions/decision-log.md` via `/decision-log` (numbered, append-only, anti-anchor rule).
+- Load-bearing **numbers** → the project's `## Current truth` block (one place; as-of date + source).
 
-File conventions:
-- Daily logs: `brain/daily/YYYY-MM-DD.md`
-- Clients: `brain/clients/<client-slug>.md`
-- Projects: `brain/projects/<project-slug>.md`
-- Use the `_template.md` in each folder as the shape for new files.
-- **Active vs. archived:** every client/project file has a `Status` (🟢 Active / ⚪
-  Closed). Only surface **Active** ones in the morning brief and recommendations.
-  When work closes, set Status to Closed and move the file to the `_archive/`
-  subfolder (`brain/clients/_archive/`, `brain/projects/_archive/`). Archived files
-  stay fully searchable for reference but stay out of the daily flow.
+The brain is only as good as how faithfully you update it.
+
+**Conventions & where things live** — the folder map, file naming, active/archive
+mechanics, single-source-of-truth, the retrieval-first principle, and the hygiene
+cadence all live in `brain/reference/brain-conventions.md`. Skim it whenever you're
+unsure where something belongs; run `/consolidate` periodically to keep the brain clean.
 
 ---
 
@@ -98,12 +96,15 @@ File conventions:
 ### End of day (when he says "/eod", "wrapping up", "done for today")
 1. Delegate to **work-logger** to finalize today's daily log: what got done, what
    moved, decisions made, what's carried to tomorrow.
-2. Update `brain/tasks/backlog.md` (check off done, re-rank, add new).
-3. If anything today was clear evidence on a development objective (good or missed),
+2. Reconcile the single-source homes: durable decisions made today → logged in
+   `brain/decisions/decision-log.md`; any load-bearing number that changed → updated in
+   its project's `## Current truth` block (don't leave the new value loose in prose).
+3. Update `brain/tasks/backlog.md` (check off done, re-rank, add new).
+4. If anything today was clear evidence on a development objective (good or missed),
    note it in the daily log — the Friday retro and CDC prep feed on these.
-4. Give a 3-line recap + a heads-up on tomorrow's first priority.
-5. **On Fridays**, after EOD, offer to run the weekly retro (`/retro`) if it hasn't
-   happened yet.
+5. Give a 3-line recap + a heads-up on tomorrow's first priority.
+6. **On Fridays**, after EOD, offer the weekly retro (`/retro`) and a memory-hygiene
+   pass (`/consolidate`) if they haven't happened this week.
 
 ### Friday retro (`/retro`, or "let's do the retro")
 The weekly development ritual — week vs. objectives. Warmer, reflective register
@@ -218,6 +219,12 @@ In Builder Mode:
   restart; CLAUDE.md and brain changes are picked up next session start too.
 - Log system changes in ONE place only: a short bullet under "Maestro system
   upgrades" in today's daily log, so work-sessions know the system changed.
+- **Publish rule — always, at the end of every Builder session:**
+  1. Sync changed files to `maestro-handover/maestro/` (copy, respecting `.gitignore`).
+  2. Commit + push to GitHub (`git commit` → `git push origin main` from inside `maestro-handover/maestro/`).
+  3. Rebuild the zip: `powershell -Command "Compress-Archive -Path './maestro/*' -DestinationPath './maestro.zip' -Force"` (run from `maestro-handover/`).
+  4. Upload to release: `gh release upload v1.0 maestro.zip --clobber` (from inside `maestro-handover/maestro/`).
+  5. Confirm: "Publicado — commit `<hash>`, zip atualizado no release v1.0."
 
 Exit Builder Mode when he returns to work topics — resume normal chief-of-staff
 behavior (and re-read the brain if you skipped it).
