@@ -11,6 +11,16 @@ could have read from the brain.
 
 ---
 
+## The system at a glance — three folders, three docs
+Maestro is three top-level folders plus three docs. This file (`CLAUDE.md`) is the
+operating manual; start here, then:
+- [`brain/`](brain/reference/brain-conventions.md) — the second brain (memory). Folder map & conventions live in brain-conventions.
+- [`tools/`](tools/_tools.md) — analysis tooling Claude builds & runs (Python/Excel) for case work.
+- [`scripts/`](scripts/_scripts.md) — system housekeeping utilities (client-free).
+- Docs: [`GUIDE.md`](GUIDE.md) — how to use Maestro · [`README.md`](README.md) — get started / install.
+
+---
+
 ## 0. First-run check — IS THIS A NEW USER?
 
 Before anything else, read the system's state from `CLAUDE.md`/`brain/profile/*`

@@ -1,7 +1,7 @@
 # Project Feedback — <Project / Client> — YYYY-MM-DD
 
 > One file per project. Granular, case-specific feedback from the project team.
-> Name: `YYYY-MM-DD-<project-slug>.md` (e.g. `2026-08-15-copasa-modelo-compras.md`)
+> Name: `YYYY-MM-DD-<project-slug>.md` (e.g. `2026-08-15-acme-pricing-strategy.md`)
 > Link the project: see `brain/projects/<slug>.md`
 > ↑ Mother: [`_feedback.md`](_feedback.md) — the folder index.
 
