@@ -1,0 +1,41 @@
+{
+  "_comment": "Template de config do project_scanner.py. Copie este arquivo para '<projeto>-scanner-config.json' e ajuste os caminhos. Atualize 'deep_scan_files' sempre que o deck ou Excel principal mudar de versão.",
+  "project": "nome-do-projeto",
+  "snapshot_path": "brain/projects/nome-do-projeto-snapshot.json",
+
+  "watch_folders": [
+    {
+      "label": "Entregáveis",
+      "path": "C:\\caminho\\para\\pasta\\entregaveis"
+    },
+    {
+      "label": "Análises",
+      "path": "C:\\caminho\\para\\pasta\\analises"
+    }
+  ],
+
+  "meeting_folders": [
+    {
+      "label": "Client Meetings",
+      "path": "C:\\caminho\\para\\pasta\\reunioes-cliente"
+    },
+    {
+      "label": "CTMs (Internal)",
+      "path": "C:\\caminho\\para\\pasta\\ctms"
+    }
+  ],
+
+  "deep_scan_files": [
+    {
+      "label": "Deck principal",
+      "path": "C:\\caminho\\completo\\para\\deck-entregavel-vX.pptx",
+      "type": "pptx"
+    },
+    {
+      "label": "Excel principal",
+      "path": "C:\\caminho\\completo\\para\\modelo-analise-vX.xlsx",
+      "type": "xlsx",
+      "track_cells": {}
+    }
+  ]
+}

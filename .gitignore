@@ -47,4 +47,12 @@ brain/credentials/*.md
 !brain/credentials/_template.md
 
 # Reusable tools may carry client data — ignore by default; force-add deliberately
-tools/
+tools/*
+!tools/project_scanner.py
+
+# Scanner snapshots contain project-specific data — never commit
+brain/projects/*-snapshot.json
+
+# Scanner configs contain real file paths — ignore; keep only the template
+brain/projects/*-scanner-config.json
+!brain/projects/_scanner-config-template.json
