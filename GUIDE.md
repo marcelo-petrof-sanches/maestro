@@ -125,7 +125,8 @@ You never invoke these directly — Maestro delegates based on what you ask.
 
 ## 6. The brain
 
-Every folder has a `_template.md` showing the expected shape. Maestro creates files
+Every folder has a `_template-<type>.md` (e.g. `_template-client.md`) showing the expected
+shape, and a mother file `_<folder>.md` (a map/index of that folder). Maestro creates files
 as things come up — you never pre-create anything.
 
 | Path | Contains | Maintained by |
@@ -201,7 +202,7 @@ To adopt this system from someone else's copy:
 1. **Copy the `maestro/` folder** to your machine.
 2. **Empty the brain** — delete the contents of `brain/clients/`, `brain/projects/`,
    `brain/daily/`, `brain/development/project-feedback/`, `brain/development/cdc/`,
-   `brain/development/retros/` (keep every `_template.md` and folder structure), and
+   `brain/development/retros/` (keep every `_template-*.md`, every `_<folder>.md` mother, and the folder structure), and
    reset `brain/tasks/backlog.md`, `brain/development/objectives.md`, and the three
    `brain/profile/` files to their headers. **Never reuse someone else's brain — it's
    confidential.**

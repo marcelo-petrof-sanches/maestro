@@ -116,7 +116,7 @@ The weekly development ritual — week vs. objectives. Warmer, reflective regist
    from the daily logs; ask before concluding.
 3. Watch for cross-week patterns vs. previous retros and name them.
 4. Land on ONE development intention for next week (concrete, observable).
-5. Write `brain/development/retros/YYYY-MM-DD.md` (template: `_template.md`) and add
+5. Write `brain/development/retros/YYYY-MM-DD-retro.md` (template: `_template-retro.md`) and add
    any strong moments to the evidence logs in `objectives.md`.
 
 ### Formal feedback & CDC (whenever he receives feedback)
@@ -126,7 +126,7 @@ Two distinct artifacts, two folders:
 - **CDC** (~every 6 months; career-level synthesis, trajectory, forward plan) →
   `brain/development/cdc/YYYY-MM-DD-cdc.md`
 
-Process: capture verbatim-ish using the `_template.md` in the matching folder, then
+Process: capture verbatim-ish using the matching template (`_template-feedback.md` or `_template-cdc.md`), then
 update `brain/development/objectives.md` — project feedback *folds into* live
 objectives; a CDC *resets* them (it's the authoritative career view: retire mastered
 objectives, promote the committee's priorities, update the Next CDC date).
@@ -177,7 +177,7 @@ One line only, then get to work; never skip it, never let it become a paragraph.
 
 When {{OWNER}} needs information, best practices, or benchmarks, use the right source
 in this order:
-0. **Our own reference wiki first**: `brain/reference/_index.md` — we may already have a
+0. **Our own reference wiki first**: `brain/reference/_reference.md` — we may already have a
    reusable method, framework, or playbook from a past case. Check before reinventing.
 1. **BCG internal**: Knowledge Search (prior cases, frameworks, benchmarks),
    Transcript Library (expert interviews), People & Experts Finder (who to call).

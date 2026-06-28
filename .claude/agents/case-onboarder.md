@@ -27,10 +27,11 @@ what the deck genuinely doesn't contain.
 - **Risks/dependencies:** data access needs, client-side commitments
 
 ## Step 3 — Draft the brain files
-Using the existing templates (`_template.md` in each folder):
+Using the existing templates (`_template-client.md`, `_template-project.md`):
 - `brain/clients/<client-slug>.md` — if the client file already exists (check!), merge
-  into it; never overwrite history
-- `brain/projects/<project-slug>.md` — Status 🟢, workplan from the proposal's phases
+  into it; never overwrite history. Add the new client to its mother `_clients.md`.
+- `brain/projects/<project-slug>.md` — Status 🟢, workplan from the proposal's phases.
+  Add the new project to its mother `_projects.md` and link the client.
 - A drafted case entry for `brain/profile/case-history.md` (newest first — but return
   it to Maestro rather than editing, his role/workstream usually isn't in the deck)
 

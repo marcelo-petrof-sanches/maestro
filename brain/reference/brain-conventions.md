@@ -26,7 +26,15 @@ not the way it arrived.
 | `brain/decisions/decision-log.md` | numbered, dated decisions (D-NNN) | "What did we decide and why?" |
 | `brain/daily/` | one log per day | "What happened on / around day Z?" |
 | `brain/tasks/` | backlog + notion-sync | "What do I need to do?" |
-| `brain/reference/` | reusable frameworks, methods, playbooks (start at [`_index.md`](_index.md)) | "How do we do X / how is the brain organized?" |
+| `brain/reference/` | reusable frameworks, methods, playbooks (start at [`_reference.md`](_reference.md)) | "How do we do X / how is the brain organized?" |
+
+## Folder mothers (MOCs) — the graph backbone
+Every folder has a **mother file** `_<folder>.md` that describes it and lists its members,
+so each folder forms a connected cluster and the whole brain hangs off this file. New files
+link their mother (the templates do this automatically). Mothers:
+- [📅 daily](../daily/_daily.md) · [🏢 clients](../clients/_clients.md) · [📊 projects](../projects/_projects.md) · [⚖️ decisions](../decisions/_decisions.md)
+- [🌱 development](../development/_development.md) ([🎯 cdc](../development/cdc/_cdc.md) · [🔁 retros](../development/retros/_retros.md) · [📝 feedback](../development/project-feedback/_feedback.md))
+- [✅ tasks](../tasks/_tasks.md) · [👤 profile](../profile/_profile.md) · [📚 reference](_reference.md) · [🔑 credentials](../credentials/_credentials.md)
 
 ## Connectivity — no orphans (a brain is a graph)
 **Every file connects to at least one other file.** That's what makes this a brain and
@@ -44,14 +52,14 @@ How each file type connects:
 - **Decision ↔ project**: every decision-log entry names its project; the project points
   back to the log. (Built into `/decision-log`.)
 - **Project → reference/playbooks**: link the reusable methods it uses (Key artifacts +
-  the [reference wiki](_index.md)).
+  the [reference wiki](_reference.md)).
 - **Daily log → what it touched**: a `Related:` line naming the project(s)/client(s) of
   the day (set at `/eod`). That single line makes every daily a connected node — no need
   to link every entry. Still **promote** durable facts to their home (Current truth /
   decision log / client file); a durable file may cite a key daily for *provenance*.
 - **Profile / development**: profile files reference each other (working-preferences ↔ bio
   ↔ case-history); objectives ↔ retros ↔ feedback. Keep those links live.
-- **Reference / tools**: every reusable asset sits in [`_index.md`](_index.md) and carries
+- **Reference / tools**: every reusable asset sits in [`_reference.md`](_reference.md) and carries
   a `## Related` footer.
 
 `/consolidate` runs an **orphan check** — any file with no link in or out gets flagged.
@@ -74,10 +82,15 @@ How each file type connects:
 - Re-confirm facts older than ~60 days; archive projects past their last milestone.
 - `/consolidate` runs this hygiene pass (dedup, staleness, archive) periodically.
 
-## File naming
-- Daily: `brain/daily/YYYY-MM-DD.md` · Clients: `brain/clients/<slug>.md`
-- Projects: `brain/projects/<slug>.md` · Decisions: `D-NNN` inside the one log
-- Use the `_template.md` in each folder as the shape for new files. Always real dates.
+## File naming — unique names, type-readable
+**No two files share a name.** The folder gives the type; the filename stays unique so
+nodes never collide in the graph/search.
+- **Members:** Daily `brain/daily/YYYY-MM-DD.md` · Clients `brain/clients/<slug>.md` ·
+  Projects `brain/projects/<slug>.md` · Retros `…/retros/YYYY-MM-DD-retro.md` (the `-retro`
+  keeps them distinct from dailies) · CDC `…/cdc/YYYY-MM-DD-cdc.md` · Feedback `…/project-feedback/YYYY-MM-DD-<slug>.md`.
+- **Mother (MOC):** `_<folder>.md` (e.g. `_daily.md`) — one per folder, sorts to top.
+- **Template:** `_template-<type>.md` (e.g. `_template-client.md`) — the shape for new files.
+- Decisions: `D-NNN` inside the one `decision-log.md`. Always real dates.
 
 ## Relacionados
-- [Reference Wiki (índice)](_index.md) — the navigable home of reusable methods/playbooks.
+- [📚 Reference Wiki / mother](_reference.md) — reusable methods/playbooks.

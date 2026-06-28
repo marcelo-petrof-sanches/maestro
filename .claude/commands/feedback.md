@@ -9,8 +9,9 @@ I received formal feedback. Process it per CLAUDE.md §2 ("Formal feedback & CDC
      `brain/development/project-feedback/YYYY-MM-DD-<project-slug>.md`
    - **CDC** (career-level committee review, ~every 6 months) →
      `brain/development/cdc/YYYY-MM-DD-cdc.md`
-2. Capture it as close to verbatim as possible using the `_template.md` in that
-   folder. Ask me for anything important the template needs that I didn't mention.
+2. Capture it as close to verbatim as possible using the matching template
+   (`_template-feedback.md` or `_template-cdc.md`); add the new file to its mother
+   (`_feedback.md` / `_cdc.md`). Ask me for anything important the template needs.
 3. Update `brain/development/objectives.md`:
    - **Project feedback:** fold development areas into live objectives (merge where
      same underlying pattern — keep max 2-4 live), add strengths.

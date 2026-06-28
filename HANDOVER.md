@@ -29,11 +29,11 @@ maestro/
 │                          /client /newcase /retro /feedback /meeting-to-work-items
 └── brain/               ← THE SECOND BRAIN (empty — you fill it)
     ├── profile/         ← working-preferences.md · bio.md · case-history.md  ← FILL FIRST
-    ├── clients/         ← one file per client (+ _archive/) — has _template.md
-    ├── projects/        ← one file per workstream (+ _archive/) — has _template.md
-    ├── daily/           ← dated logs — has _template.md
+    ├── clients/         ← one file per client (+ _archive/) — _clients.md (mother) + _template-client.md
+    ├── projects/        ← one file per workstream (+ _archive/) — _projects.md + _template-project.md
+    ├── daily/           ← dated logs — _daily.md (mother) + _template-daily.md
     ├── tasks/           ← backlog.md (empty) · notion-sync.md (optional)
-    ├── credentials/     ← empty; _index.md + _template.md (use a password manager!)
+    ├── credentials/     ← empty; _credentials.md + _template-credentials.md (use a password manager!)
     └── development/     ← objectives.md (empty) + cdc/ project-feedback/ retros/ (templates)
 ```
 

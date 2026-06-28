@@ -38,4 +38,5 @@
 
 ## Key artifacts
 - _(deck, model, doc — paths)_
-- _(reusable methods/playbooks used → [reference wiki](../reference/_index.md))_
+- _(reusable methods/playbooks used → [reference wiki](../reference/_reference.md))_
+- **Mother:** [📊 projects](_projects.md)

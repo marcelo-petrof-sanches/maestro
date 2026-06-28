@@ -11,7 +11,8 @@ Run the Friday retro as defined in CLAUDE.md §2 ("Friday retro"):
    - Per development objective: where it showed up, where I missed it
    - Cross-week patterns vs. previous retros
 3. Help me land on ONE concrete development intention for next week.
-4. Write the retro to `brain/development/retros/<friday-date>.md` (use `_template.md`)
-   and add strong moments to the evidence logs in `objectives.md`.
+4. Write the retro to `brain/development/retros/<friday-date>-retro.md` (use
+   `_template-retro.md`), add it to the retros mother [`_retros.md`], and add strong
+   moments to the evidence logs in `objectives.md`.
 
 My initial thoughts on the week (optional): $ARGUMENTS

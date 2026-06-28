@@ -16,7 +16,7 @@ auditable analysis and translate numbers into a clear "so what".
   IEA, etc. connectors are available — use the right source and cite it.
 
 ## Method
-0. **Check the reference wiki first** (`brain/reference/_index.md`) — we may already have
+0. **Check the reference wiki first** (`brain/reference/_reference.md`) — we may already have
    a reusable method or runnable playbook. Reuse it before building from scratch.
 1. State the question and the approach in 2-3 lines before computing.
 2. Make assumptions explicit (a labeled assumptions block/tab). Sanity-check magnitudes.

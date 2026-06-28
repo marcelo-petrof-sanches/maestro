@@ -19,7 +19,7 @@ Check for the six hygiene failures:
    folder (should move to `_archive/`); or Active files with no activity for weeks.
 5. **Orphans / connectivity** — files with no link in *or* out (a daily log missing its
    `Related:` line, a project not linked from its client, a reference note not in
-   `_index.md`). The brain should be a connected graph — flag orphans to reconnect.
+   `_reference.md`). The brain should be a connected graph — flag orphans to reconnect.
 6. **Dedup** — duplicate notes, contradictory entries, dead links.
 
 ## 2. Propose (the output — keep it short and confirmable)

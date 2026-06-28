@@ -24,29 +24,34 @@ desktop.ini
 # Daily logs (dated files)
 brain/daily/20*.md
 
-# Client & project files (keep the _template.md)
+# Client & project files (keep the template + folder mother)
 brain/clients/*.md
-!brain/clients/_template.md
+!brain/clients/_template-client.md
+!brain/clients/_clients.md
 brain/projects/*.md
-!brain/projects/_template.md
+!brain/projects/_template-project.md
+!brain/projects/_projects.md
 
-# Development history (keep the _template.md in each)
+# Development history (keep the template + folder mother in each)
 brain/development/cdc/*.md
-!brain/development/cdc/_template.md
+!brain/development/cdc/_template-cdc.md
+!brain/development/cdc/_cdc.md
 brain/development/project-feedback/*.md
-!brain/development/project-feedback/_template.md
+!brain/development/project-feedback/_template-feedback.md
+!brain/development/project-feedback/_feedback.md
 brain/development/retros/*.md
-!brain/development/retros/_template.md
+!brain/development/retros/_template-retro.md
+!brain/development/retros/_retros.md
 
-# Reference notes (personal) — keep brain-conventions.md + the wiki index (system infrastructure)
+# Reference notes (personal) — keep brain-conventions + the reference mother (system infrastructure)
 brain/reference/*.md
 !brain/reference/brain-conventions.md
-!brain/reference/_index.md
+!brain/reference/_reference.md
 
-# Credentials — NEVER commit secrets (keep only index + template)
+# Credentials — NEVER commit secrets (keep only the mother index + template)
 brain/credentials/*.md
-!brain/credentials/_index.md
-!brain/credentials/_template.md
+!brain/credentials/_credentials.md
+!brain/credentials/_template-credentials.md
 
 # Reusable tools may carry client data — ignore by default; force-add deliberately
 tools/*
