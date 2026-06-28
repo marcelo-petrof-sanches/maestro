@@ -27,4 +27,13 @@ from yesterday's log into today's plan.
 - Always use today's real date for filenames and entries. Convert relative dates.
 - Tasks: keep them atomic, with client/project tag + due date when known.
 - Don't lose information — fold updates into structure, don't overwrite history.
+- **Current truth = one place.** Each project file has a `## Current truth` table of
+  load-bearing numbers/facts. When a load-bearing number changes, update it **there**
+  (with a fresh as-of date + source) — never restate it in prose elsewhere; link to it.
+  If you catch the same number drifting in two places, reconcile to the Current truth row.
+- **Keep the brain connected (no orphans).** When you close a daily log, set its
+  `Related:` line to the projects/clients it touched. When you create/update a project,
+  ensure its client links it back (the client's `## Workstreams / projects`) and the
+  project links its client. Every file should reach the graph via ≥1 link.
+  (Conventions: `brain/reference/brain-conventions.md`.)
 - Report back to Maestro a 2-3 line summary of what you logged/changed.

@@ -11,6 +11,9 @@
 - **Timeline:** _(start → expected end; key milestones)_
 - **Commercial:** _(scope, sensitivities — keep high-level)_
 
+## Workstreams / projects
+- _(link each project owned for this client: `[Name](../projects/<slug>.md)` — status)_
+
 ## Key people (client side)
 | Name | Role | Notes (style, what they care about, relationship) |
 |---|---|---|

@@ -8,7 +8,7 @@ Pairs well with the Friday retro. Handle directly (read the brain; you may deleg
 broad read to a read-only Explore agent to keep context clean).
 
 ## 1. Scan (read across the brain; don't change anything yet)
-Check for the five hygiene failures:
+Check for the six hygiene failures:
 1. **Staleness** — facts with an `as of` date older than ~60 days; projects past their
    `Next milestone` date with no recent daily-log activity.
 2. **Stale decisions** — decision-log entries past their `Review by` (apply the
@@ -17,7 +17,10 @@ Check for the five hygiene failures:
    anything that should live in a `## Current truth` block but is loose in prose.
 4. **Archive candidates** — client/project files marked Closed but still in the live
    folder (should move to `_archive/`); or Active files with no activity for weeks.
-5. **Dedup / orphans** — duplicate notes, contradictory entries, dead links.
+5. **Orphans / connectivity** — files with no link in *or* out (a daily log missing its
+   `Related:` line, a project not linked from its client, a reference note not in
+   `_index.md`). The brain should be a connected graph — flag orphans to reconnect.
+6. **Dedup** — duplicate notes, contradictory entries, dead links.
 
 ## 2. Propose (the output — keep it short and confirmable)
 Present **≤5 highest-value changes**, ranked, each as a concrete action {{OWNER}} can

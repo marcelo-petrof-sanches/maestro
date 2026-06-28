@@ -28,6 +28,34 @@ not the way it arrived.
 | `brain/tasks/` | backlog + notion-sync | "What do I need to do?" |
 | `brain/reference/` | reusable frameworks, methods, playbooks (start at [`_index.md`](_index.md)) | "How do we do X / how is the brain organized?" |
 
+## Connectivity — no orphans (a brain is a graph)
+**Every file connects to at least one other file.** That's what makes this a brain and
+not a folder of notes — you can always navigate from any node to the rest. When you
+create or close a file, connect it.
+
+The one guardrail that keeps connectivity from becoming noise: **connect at the file
+level, not the line level.** Each file declares its neighbours once (a `Related:` line or
+a links section) — you do *not* turn every mention into a link. Fewer stable links beat
+many stale ones (links you won't maintain rot).
+
+How each file type connects:
+- **Client ↔ project** (both directions): each client lists/links its workstreams; each
+  project links its client.
+- **Decision ↔ project**: every decision-log entry names its project; the project points
+  back to the log. (Built into `/decision-log`.)
+- **Project → reference/playbooks**: link the reusable methods it uses (Key artifacts +
+  the [reference wiki](_index.md)).
+- **Daily log → what it touched**: a `Related:` line naming the project(s)/client(s) of
+  the day (set at `/eod`). That single line makes every daily a connected node — no need
+  to link every entry. Still **promote** durable facts to their home (Current truth /
+  decision log / client file); a durable file may cite a key daily for *provenance*.
+- **Profile / development**: profile files reference each other (working-preferences ↔ bio
+  ↔ case-history); objectives ↔ retros ↔ feedback. Keep those links live.
+- **Reference / tools**: every reusable asset sits in [`_index.md`](_index.md) and carries
+  a `## Related` footer.
+
+`/consolidate` runs an **orphan check** — any file with no link in or out gets flagged.
+
 ## Single-source-of-truth (no drift)
 - **Load-bearing numbers live in exactly one place:** the project's `## Current truth`
   table, each with an as-of date and source. Everywhere else *links* to it; never restate
