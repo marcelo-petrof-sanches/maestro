@@ -39,6 +39,9 @@ Run the morning brief as defined in CLAUDE.md §2:
 4. Synthesize ONE crisp briefing: Today's shape · Top 3 priorities (with why) ·
    Watch-outs · Project file delta (if any) · Suggested first move.
 5. Open/create today's daily log (`brain/daily/<today>.md`) and record the plan
-   (delegate to work-logger or do it directly).
+   (delegate to work-logger or do it directly). **If you create the file, you MUST add
+   it to the `_daily.md` mother index (Members list) in the same step** — no-orphans
+   rule (brain-conventions). This holds even when Maestro creates the log directly
+   instead of via work-logger.
 
 Additional context from {{OWNER}} (optional): $ARGUMENTS
