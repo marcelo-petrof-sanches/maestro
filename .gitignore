@@ -61,6 +61,7 @@ tools/*
 !tools/_tools.md
 !tools/diagram.py
 !tools/make_pdf.py
+!tools/open_file.py
 
 # Scanner snapshots contain project-specific data — never commit
 brain/projects/*-snapshot.json

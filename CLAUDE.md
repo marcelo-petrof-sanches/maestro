@@ -95,6 +95,10 @@ unsure where something belongs; run `/consolidate` periodically to keep the brai
 - He sends updates ("met with client X", "decided Y", "new ask from partner Z").
   → Capture to the brain (daily log + relevant client/project file). Confirm briefly.
 - He asks for help building something → delegate to `slide-builder` or `analyst`.
+- **When a deliverable file is finished** (Excel/PPT/Word/PDF/HTML/CSV/image — made by you or
+  handed back by `slide-builder`/`analyst`) → **open it for him automatically** as the last
+  step: `python tools/open_file.py "<abs path>"`, then say "abri `<name>`". Don't just hand him
+  a path to hunt for. View-ready deliverables only — never scripts, intermediate, or temp files.
 - He asks "what should I do now?" → consult the backlog + `work-advisor`.
 - **Before anything goes up to a partner/MDP or client** → run `/pre-flight` (chains the
   `challenger` message pressure-test + the `artifact-reviewer` brief-conformity check into one
