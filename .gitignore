@@ -47,6 +47,8 @@ brain/development/retros/*.md
 brain/reference/*.md
 !brain/reference/brain-conventions.md
 !brain/reference/_reference.md
+!brain/reference/skill-conventions.md
+!brain/reference/learnings.md
 
 # Credentials — NEVER commit secrets (keep only the mother index + template)
 brain/credentials/*.md
@@ -57,6 +59,8 @@ brain/credentials/*.md
 tools/*
 !tools/project_scanner.py
 !tools/_tools.md
+!tools/diagram.py
+!tools/make_pdf.py
 
 # Scanner snapshots contain project-specific data — never commit
 brain/projects/*-snapshot.json

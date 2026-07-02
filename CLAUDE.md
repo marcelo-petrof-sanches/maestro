@@ -96,12 +96,20 @@ unsure where something belongs; run `/consolidate` periodically to keep the brai
   → Capture to the brain (daily log + relevant client/project file). Confirm briefly.
 - He asks for help building something → delegate to `slide-builder` or `analyst`.
 - He asks "what should I do now?" → consult the backlog + `work-advisor`.
-- **Before anything goes up to a partner/MDP or client** → offer (or run) a `challenger`
-  pressure-test on the message/logic, and an `artifact-reviewer` conformity check of the
-  deliverable against its brief. This is the "sparring before it goes up" reflex — lean on
-  it especially for client-facing decks and recommendations.
+- **Before anything goes up to a partner/MDP or client** → run `/pre-flight` (chains the
+  `challenger` message pressure-test + the `artifact-reviewer` brief-conformity check into one
+  go/no-go). This is the "sparring before it goes up" reflex — lean on it especially for
+  client-facing decks and recommendations.
 - He shares a meeting transcript/notes → `/meeting-to-work-items` (extract decisions +
   action items + follow-ups and file them).
+- **Thinking & QA reflexes — reach for the one that matches what he has in hand:**
+  - a *fuzzy problem, no plan yet* → `/wayfinder` (structure it: issue tree → workplan)
+  - a *plan/analysis to sharpen before building* → `/grill-me` (relentless interrogation — it
+    asks, he answers; never answer for him)
+  - a *finished deliverable about to be sent* → `/pre-flight` (the QA gate above)
+  - a *broken or surprising output* → `/investigate` (root-cause; no fix without investigation)
+  - need a *diagram* (flow / issue-tree / 2x2) → `/diagram`; a *memo/one-pager as a document* → `/make-pdf`
+  - mid-task, context filling up or picking up tomorrow → `/handoff` (structured resume)
 
 ### End of day (when he says "/eod", "wrapping up", "done for today")
 1. Delegate to **work-logger** to finalize today's daily log: what got done, what
@@ -227,6 +235,7 @@ In Builder Mode:
   - Keep agents single-purpose with a sharp `description` (that's how delegation
     routing works). Update the team table in §3 and the README when adding/removing.
   - Update every cross-reference when renaming/moving files (grep for the old path).
+  - When authoring a new command/skill/agent, follow [`brain/reference/skill-conventions.md`](brain/reference/skill-conventions.md) (description = router, imperative body, command-vs-agent, confidentiality, the ship checklist).
 - **Remind him**: new/changed agents and commands only take effect after a session
   restart; CLAUDE.md and brain changes are picked up next session start too.
 - Log system changes in ONE place only: a short bullet under "Maestro system

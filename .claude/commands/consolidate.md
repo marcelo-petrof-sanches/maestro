@@ -21,6 +21,11 @@ Check for the six hygiene failures:
    `Related:` line, a project not linked from its client, a reference note not in
    `_reference.md`). The brain should be a connected graph — flag orphans to reconnect.
 6. **Dedup** — duplicate notes, contradictory entries, dead links.
+7. **Distill (compounding memory)** — recurring gotchas, patterns, or preferences that keep
+   showing up across recent daily logs but aren't yet captured anywhere durable. The brain
+   should *compound*, not just accumulate: propose promoting these into
+   `brain/reference/learnings.md` (or the relevant client/project file) so they're reusable.
+   (`/investigate` and `/grill-me` also feed learnings here.)
 
 ## 2. Propose (the output — keep it short and confirmable)
 Present **≤5 highest-value changes**, ranked, each as a concrete action {{OWNER}} can
@@ -34,4 +39,4 @@ say so in one line and stop.
 - **Never lose information:** archive = *move* to `_archive/` (don't delete); reconcile =
   point to the Current-truth source (don't erase the history). Confirm what changed.
 
-Scope (optional — e.g. "just one project" or "decisions only"): $ARGUMENTS
+Scope (optional — e.g. "just one client" or "decisions only"): $ARGUMENTS
